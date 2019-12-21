@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cf49e3de7b.js" crossorigin="anonymous"></script>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -20,8 +21,8 @@
             <i class="fa fa-caret-down"></i>
             </button>
              <div class="dropdown-content">
-            <a href="Group-project\index.html" target="_blank">Group project - ToDo-list (JS)</a>
-            <a href="Javascript-exam\index.html" target="_blank">Individual assignment JS- guessing game</a>
+            <a href="index-todo.html" target="_blank">Group project - ToDo-list (JS)</a>
+            <a href="index-guessing.html" target="_blank">Exam JS - guessing game</a>
             </div>
             </div>
                 <a href="about-me.html">About me</a>
@@ -46,23 +47,31 @@
         <section id="additional-information">
             <h2>Contact info</h2>
             <div id="contact-info"> 
-                 <p id="email">  &#x2709 <a href="mailto:evandenoutenaar@gmail.com" >evandenoutenaar@gmail.com </a>
+                <div id="container-contact-details">
+                
+                    
+                 <p id="email"><i class="far fa-envelope"></i><a href="mailto:evandenoutenaar@gmail.com" >evandenoutenaar@gmail.com</a>
                 </p>
-                 <p>&#9742 <a href="tel:0793131572" class="contact-link">079-313 15 72</a>
+                 <p id="cellphone"><i class="fas fa-phone-square-alt"></i><a href="tel:0793131572" class="contact-link">079-313 15 72</a>
                 </p>
-                 <p> &#x1F3E0 Åkergatan 9, Tranås</p>
-                 <p>
-                 <a href="https://www.linkedin.com/in/vandenoutenaar/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                 <p id="adress"><i class="fas fa-home"></i>Åkergatan 9 Tranås</p>
+                 <p id="linkedin"><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/vandenoutenaar/" target="_blank">LinkedIn</a>
                 </p>
+                </div>
+                <div id="container-contact-img">
+                    <img src="eric-van-den-outenaar.png" alt="Bild på Eric van den Outenaar">
+                </div>
+
             </div>
-            
+            <div class="language-list-up">
             <h2>Language skills</h2>
-            <ul class="language-list">
+            <ul>
                 <li>Dutch: native</li>
                 <li>English: fluent</li>
                 <li>Swedish: intermediate level</li>
                 <li>German: Basic</li>
             </ul>
+        </divclass="language-list">
         </section>
         <section id="work-experience">
             <h2>Work Experience</h2>
@@ -197,6 +206,15 @@
                 </p>
             </article>
             <button id="btn-hide-edu">Show less</button>
+
+            <div class="language-list-down">
+                <h2>Language skills</h2>
+                <ul>
+                    <li>Dutch: native</li>
+                    <li>English: fluent</li>
+                    <li>Swedish: intermediate level</li>
+                    <li>German: basic</li>
+                </ul>
         </section>
     </div>
     </main>

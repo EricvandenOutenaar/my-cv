@@ -28,13 +28,16 @@ header{
     margin-bottom: 2px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 nav{
     background: #3d6098;
+    width: 100%;
     border-radius: 5px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 .navbar {
     overflow: hidden;
@@ -43,7 +46,7 @@ nav{
   }
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 1em;
     color: #e7e7e7;
     text-align: center;
     padding: 14px 16px;
@@ -57,6 +60,7 @@ nav{
   .dropdown .dropbtn {
     font-size: 16px;
     border: none;
+    border-radius: 0px;
     outline: none;
     color: #e7e7e7;
     padding: 14px 16px;
@@ -97,9 +101,12 @@ nav{
 .introduction-container{
     display: flex;
     padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 50px auto;
+    padding-top: 12px;
+    margin: 60px auto 37px;
 }  
+#btn-hide-work:hover, #btn-show-work:hover, #btn-show-edu:hover, #btn-hide-edu:hover{
+    opacity: 0.7;
+}
 article{
     background:#e7e7e7;
     padding: 5px;
@@ -108,7 +115,7 @@ article{
 h1{
     text-align: center;
     font-size: 3.5em;
-    font-weight: 100;
+    font-weight: 70;
  
     padding: 20px;
     margin-bottom: 5px;
@@ -120,7 +127,7 @@ h1, h2, h3,h4, p{
 
 p{
     line-height: 140%;
-    font-size: 110%;
+    font-size: 1.2em;
     color: #0b1531; 
 }
 
@@ -128,52 +135,49 @@ h2{
     padding:3px;
     padding-left: 5px;
     color: #e7e7e7;
-    font-size: 180%;
+    font-size: 2em;
     font-weight: lighter;
     background: #3d6098;
     border-radius: 0.2em;
     margin-bottom: 0.6em;
-
+    
 }
 h3{
-    font-size: 180%;
+    font-size: 1.8em;
     margin-bottom: 0.7em;
     color: #0b1531;
-  
+    
 }
- 
+
 h4{
-    font-size: 20px;
+    font-size: 1.4em;
     font-weight: lighter;
     margin-bottom: 0.6em;
-   color: #0b1531;
+    color: #0b1531;
     
     
-}
-img{
-    max-width: 100%;
-    border-radius: 70%;
-    display: none;
-    
-  
 }
 
 ul, ol{
     padding-inline-start: 40px;
-    line-height: 130%;;
+    line-height: 140%;;
     font-size: 120%;
     margin-bottom: 20%;
 }
 #email{
-   margin-right: -93%;
+    margin-right: -93%;
 }
-#email a{
+#email a, #cellphone a, #linkedin a{
     text-decoration: none;
     color:#0b1531;
 }
 
-#email a:hover{
+#email a:hover, #cellphone a:hover, #linkedin a:hover{
     color: grey;
+}
+
+#container-contact-details i{
+    padding-right: 6px;
 }
 
 #introduction{
@@ -190,12 +194,12 @@ ul, ol{
 }
 #additional-information{
     width: 100%;
-    padding-right: 4%;
+    padding-right: 4.5%;
     margin-top: 1%;
     
 }
 #additional-information p{
-    font-size: 75%;
+    font-size: 0.61em;
     margin-top: 1.1em;
 }
 article{
@@ -207,15 +211,19 @@ article{
 
 li{
     color: #0b1531;
-
+    
 }
 
 #about-me{
-    font-size: 130%;
+    font-size: 1.2em;
     background: #e7e7e7;
 }
 #about-me{
     margin-top: 0.7em;
+}
+#about-me h3{
+    padding: 10px auto 5px;
+    margin-bottom: 0.5em;
 }
 #work-experience{
     width: 100%;     
@@ -232,10 +240,6 @@ li{
     
     padding-left: 2%;
     
-}
-.contact-link{
-    color: rgb(35, 16, 107);
-    text-decoration: none;
 }
 
 #menu-bar {
@@ -254,6 +258,7 @@ button{
 
 #contact-info{
     margin-bottom: 50px;
+    display: flex;
     overflow: hidden;
     font-size: 100%;
     
@@ -273,15 +278,45 @@ button{
 a{
     color: #0077b5;
 }
+#container-contact-img{
+    width:40%;
+ 
 
 
-@media only screen and (min-width: 768px){
+    
+}
+#container-contact-img img{
+    max-width: 100%;
+    border-radius: 70%;
+    margin-top: 55px;
+     
+}
+
+#image-introduction img{
+    display: none;
+}
+
+#container-contact-details{
+    width:60%;
+    font-size: 1.5em;
+}
+.language-list-up{
+    display: none;
+}
+.language-list-down{
+    width:100%;
+}
+
+p#adress {
+    padding-left: 8.1px;
+}
+@media only screen and (min-width: 769px){
     
     #work-experience{
         width: 75%;
     }
     #education{
-
+        
         width: 75%;
     }
     #additional-information{
@@ -296,13 +331,38 @@ a{
     } 
     #text-introduction{
         width: 80%;
-        padding-left: 8.1%;
+        padding-left: 7.3%;
+            
     }
-    img{
+    #image-introduction img{
         max-width: 100%;
         border-radius: 70%;
         display: flex;
       
     }
-    
+    #container-contact-img img{
+
+
+        width: 30%;
+        border-radius: 70%;
+        display:none;
+      
+    }
+    #container-contact-details{
+        width:100%;
+    }
+    #container-contact-img{
+        width:0%;
+    }
+    .language-list-up{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .language-list-up h2{
+        width:100%;
+    }
+    .language-list-down{
+        display: none;
+    }
 }
