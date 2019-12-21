@@ -100,9 +100,8 @@ nav{
 
 .introduction-container{
     display: flex;
-    padding-bottom: 10px;
-    padding-top: 12px;
-    margin: 60px auto 37px;
+    padding: 5px;
+    margin: 35px auto 15px;
 }  
 #btn-hide-work:hover, #btn-show-work:hover, #btn-show-edu:hover, #btn-hide-edu:hover{
     opacity: 0.7;
