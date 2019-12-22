@@ -30,8 +30,8 @@ var EventHandlers = (function () {
 
         $("#guess-button").click(onClickGuessButton);
 
-        window.alert("This 'simple' guessing game I had to make for my exam in my introductionary course in JavaScript at TUC. You needed to demonstrate that you could structure your code well in functions and modules and knew how to correctly" +
-        " apply eventhandlers. (I used jQuery for that). I played around with amongst others hiding and showing elements, creating certain pauses/delays, and also building in checks for if the user entered invalid data.");
+        window.alert("This 'simple' guessing game I had to make for my exam in my JavaScript course at TUC. You needed to demonstrate that you could structure your code well in functions and modules and knew how to correctly" +
+        " apply event handlers. (I used jQuery for that). I played around with amongst others hiding and showing elements, creating certain pauses/delays, and also building in checks for if the user entered invalid data.");
       
     }
 

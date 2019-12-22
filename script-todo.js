@@ -11,9 +11,9 @@ var EventHandlers = (function () {
 
     function init() {
         window.alert("This webapp is the result of a group project I had with 4 others students (part of our JavaScript course at TUC)." + 
-         "The assignment was to build a ToDo-list in which we stored users with their to do-lists in local storage. I was amongst others responsible" +
+         "The assignment was to build a Todo-list in which we stored users with their to do-lists in local storage. I was amongst others responsible" +
          " for creating a module that dealt with storing data in and getting data from local storage. I also developed a module that handled the to do-lists (creating to do-objects, modifying and deleting them). I made it possible to store certain 'meta data' which we then could use to build functionality around (for example the history stats). In addition, I also" +
-         " had an active role in getting all the code that we wrote to work toghether as a whole. Ps. The website is best opened from desktop (design not responsive).");
+         " had an active role in getting all our code to function. Ps. The design is not responsive).");
         $("#addToListBtn").click(function () {
 
             if (changePrio === false) {
